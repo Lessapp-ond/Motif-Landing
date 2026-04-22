@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { supabase } from "@/lib/supabase"
+import { getSupabase } from "@/lib/supabase"
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email invalide" }, { status: 400 })
     }
 
-    const { error } = await supabase
+    const { error } = await getSupabase()
       .from("waitlist")
       .insert({ email: email.toLowerCase().trim(), locale: locale || "fr" })
 
