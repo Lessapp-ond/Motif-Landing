@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { translations, type Locale } from "@/lib/translations"
 import { Apple } from "lucide-react"
+import { WaitlistForm } from "@/components/landing/waitlist-form"
 
 interface DownloadProps {
   locale: Locale
@@ -45,18 +46,9 @@ export function Download({ locale }: DownloadProps) {
             </div>
           </div>
 
-          {/* Store badges - coming soon state */}
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <div className="flex items-center gap-3 bg-foreground/10 text-foreground px-8 py-4 rounded-full">
-              <Apple className="w-5 h-5" />
-              <span className="text-sm font-medium">{t.download.appStore}</span>
-            </div>
-            <div className="flex items-center gap-3 bg-foreground/10 text-foreground px-8 py-4 rounded-full">
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 3.658L16.8 9.99l-2.302 2.302L5.864 3.658z"/>
-              </svg>
-              <span className="text-sm font-medium">{t.download.playStore}</span>
-            </div>
+          {/* Waitlist */}
+          <div className="w-full max-w-md">
+            <WaitlistForm locale={locale} />
           </div>
         </div>
       </div>

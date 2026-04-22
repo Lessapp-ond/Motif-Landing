@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { translations, type Locale } from "@/lib/translations"
+import { WaitlistForm } from "@/components/landing/waitlist-form"
 
 interface HeroProps {
   locale: Locale
@@ -38,9 +39,9 @@ export function Hero({ locale }: HeroProps) {
             {t.hero.subtitle}
           </p>
 
-          {/* CTA */}
-          <div className="px-8 py-3 rounded-full bg-foreground/10 text-foreground text-base font-medium">
-            {t.hero.cta}
+          {/* Waitlist */}
+          <div className="w-full max-w-md">
+            <WaitlistForm locale={locale} />
           </div>
 
           {/* App Preview */}

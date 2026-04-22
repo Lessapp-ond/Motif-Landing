@@ -13,6 +13,12 @@ export const translations = {
       subtitle: "Motif helps you see why you spend, and what your purchases say about how you feel.",
       cta: "Coming soon",
     },
+    waitlist: {
+      placeholder: "Your email",
+      cta: "Join the waitlist",
+      success: "You're in. We'll let you know when Motif is ready.",
+      error: "Something went wrong. Try again.",
+    },
     features: {
       title: "What Motif reveals",
       subtitle: "Every purchase tells a story. Motif helps you read yours.",
@@ -108,6 +114,12 @@ export const translations = {
       subtitle: "Motif te ayuda a ver por qué gastas, y lo que tus compras dicen sobre cómo te sientes.",
       cta: "Próximamente",
     },
+    waitlist: {
+      placeholder: "Tu email",
+      cta: "Unirme a la lista",
+      success: "Listo. Te avisaremos cuando Motif esté disponible.",
+      error: "Algo salió mal. Inténtalo de nuevo.",
+    },
     features: {
       title: "Lo que Motif revela",
       subtitle: "Cada compra cuenta una historia. Motif te ayuda a leer la tuya.",
@@ -202,6 +214,12 @@ export const translations = {
       title: "Pas une app de budget. Un miroir.",
       subtitle: "Motif t'aide à voir pourquoi tu dépenses, et ce que tes achats racontent de ce que tu ressens.",
       cta: "Bientôt disponible",
+    },
+    waitlist: {
+      placeholder: "Ton email",
+      cta: "Rejoindre la liste",
+      success: "C'est noté. On te prévient dès que Motif est prêt.",
+      error: "Une erreur est survenue. Réessaie.",
     },
     features: {
       title: "Ce que Motif révèle",
