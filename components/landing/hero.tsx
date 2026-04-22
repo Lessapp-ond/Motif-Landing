@@ -15,11 +15,11 @@ export function Hero({ locale }: HeroProps) {
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
           {/* Logo Mark */}
           <div className="mb-8">
-            <Image 
-              src="/logo.svg" 
-              alt="Motif" 
-              width={100} 
-              height={100} 
+            <Image
+              src="/logo.svg"
+              alt="Motif"
+              width={100}
+              height={100}
               className="rounded-full"
             />
           </div>
@@ -40,12 +40,12 @@ export function Hero({ locale }: HeroProps) {
           </p>
 
           {/* CTA Button */}
-          <Button 
+          <Button
             asChild
-            size="lg" 
+            size="lg"
             className="bg-foreground hover:bg-foreground/90 text-background px-8 py-6 text-base rounded-full"
           >
-            <a href="#newsletter">{t.hero.cta}</a>
+            <a href="#download">{t.hero.cta}</a>
           </Button>
 
           {/* App Preview */}
@@ -54,7 +54,7 @@ export function Hero({ locale }: HeroProps) {
             <div className="bg-card rounded-3xl shadow-2xl shadow-primary/10 p-2 max-w-sm mx-auto">
               <Image
                 src="/images/app-screenshot-1.png"
-                alt="Motif App Screenshot"
+                alt="Motif App"
                 width={320}
                 height={640}
                 className="rounded-2xl"

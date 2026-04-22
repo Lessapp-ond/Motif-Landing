@@ -1,11 +1,18 @@
 import { translations, type Locale } from "@/lib/translations"
-import { Sparkles, TrendingUp, Mail, Target } from "lucide-react"
+import { Heart, RefreshCw, User, Mail, Target, Shield } from "lucide-react"
 
 interface FeaturesProps {
   locale: Locale
 }
 
-const icons = [Sparkles, TrendingUp, Mail, Target]
+const iconMap: Record<string, typeof Heart> = {
+  heart: Heart,
+  refresh: RefreshCw,
+  user: User,
+  mail: Mail,
+  target: Target,
+  shield: Shield,
+}
 
 export function Features({ locale }: FeaturesProps) {
   const t = translations[locale]
@@ -23,13 +30,13 @@ export function Features({ locale }: FeaturesProps) {
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        {/* Features Grid — 2x3 */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {t.features.items.map((feature, index) => {
-            const Icon = icons[index]
+            const Icon = iconMap[feature.icon] || Heart
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-background rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">

@@ -43,8 +43,8 @@ export function Header({ locale, onLocaleChange, t }: HeaderProps) {
             <a href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t.nav.features}
             </a>
-            <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              {t.nav.howItWorks}
+            <a href="/#philosophy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              {t.nav.philosophy}
             </a>
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               {t.nav.blog}
@@ -99,11 +99,11 @@ export function Header({ locale, onLocaleChange, t }: HeaderProps) {
               {t.nav.features}
             </a>
             <a 
-              href="/#how-it-works" 
+              href="/#philosophy" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {t.nav.howItWorks}
+              {t.nav.philosophy}
             </a>
             <Link 
               href="/blog" 
