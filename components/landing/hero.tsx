@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { translations, type Locale } from "@/lib/translations"
-import { Button } from "@/components/ui/button"
 
 interface HeroProps {
   locale: Locale
@@ -39,14 +38,10 @@ export function Hero({ locale }: HeroProps) {
             {t.hero.subtitle}
           </p>
 
-          {/* CTA Button */}
-          <Button
-            asChild
-            size="lg"
-            className="bg-foreground hover:bg-foreground/90 text-background px-8 py-6 text-base rounded-full"
-          >
-            <a href="#download">{t.hero.cta}</a>
-          </Button>
+          {/* CTA */}
+          <div className="px-8 py-3 rounded-full bg-foreground/10 text-foreground text-base font-medium">
+            {t.hero.cta}
+          </div>
 
           {/* App Preview */}
           <div className="mt-16 md:mt-24 relative">

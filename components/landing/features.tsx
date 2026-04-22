@@ -30,8 +30,8 @@ export function Features({ locale }: FeaturesProps) {
           </p>
         </div>
 
-        {/* Features Grid — 2x3 */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
           {t.features.items.map((feature, index) => {
             const Icon = iconMap[feature.icon] || Heart
             return (
