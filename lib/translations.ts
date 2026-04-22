@@ -16,6 +16,7 @@ export const translations = {
     features: {
       title: "What Motif reveals",
       subtitle: "Every purchase tells a story. Motif helps you read yours.",
+      teaser: "And much more to discover inside the app.",
       items: [
         {
           icon: "heart",
@@ -98,6 +99,7 @@ export const translations = {
     features: {
       title: "Lo que Motif revela",
       subtitle: "Cada compra cuenta una historia. Motif te ayuda a leer la tuya.",
+      teaser: "Y mucho más por descubrir dentro de la app.",
       items: [
         {
           icon: "heart",
@@ -180,6 +182,7 @@ export const translations = {
     features: {
       title: "Ce que Motif révèle",
       subtitle: "Chaque achat raconte une histoire. Motif t'aide à lire la tienne.",
+      teaser: "Et bien d'autres choses à découvrir dans l'app.",
       items: [
         {
           icon: "heart",

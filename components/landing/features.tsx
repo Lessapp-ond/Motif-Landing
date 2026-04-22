@@ -1,5 +1,5 @@
 import { translations, type Locale } from "@/lib/translations"
-import { Heart, RefreshCw, User, Mail, Target, Shield } from "lucide-react"
+import { Heart, RefreshCw, User } from "lucide-react"
 
 interface FeaturesProps {
   locale: Locale
@@ -9,9 +9,6 @@ const iconMap: Record<string, typeof Heart> = {
   heart: Heart,
   refresh: RefreshCw,
   user: User,
-  mail: Mail,
-  target: Target,
-  shield: Shield,
 }
 
 export function Features({ locale }: FeaturesProps) {
@@ -52,6 +49,11 @@ export function Features({ locale }: FeaturesProps) {
             )
           })}
         </div>
+
+        {/* Teaser */}
+        <p className="text-center text-muted-foreground italic mt-12 text-sm">
+          {t.features.teaser}
+        </p>
       </div>
     </section>
   )
