@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Motif brand colors */
+  --background: #F5F0EB;
+  --foreground: #2D2A26;
+  --card: #FDFCFA;
+  --card-foreground: #2D2A26;
+  --popover: #FDFCFA;
+  --popover-foreground: #2D2A26;
+  --primary: #C4885B;
+  --primary-foreground: #FDFCFA;
+  --secondary: #EDE8E2;
+  --secondary-foreground: #2D2A26;
+  --muted: #E8E2DB;
+  --muted-foreground: #8A857D;
+  --accent: #C4885B;
+  --accent-foreground: #FDFCFA;
+  --destructive: #D97B5C;
+  --destructive-foreground: #FDFCFA;
+  --border: #E0D9D0;
+  --input: #E8E2DB;
+  --ring: #C4885B;
+  --radius: 1rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,70 @@
+export const blogTranslations = {
+  en: {
+    blog: {
+      title: "Insights",
+      subtitle: "Expert perspectives on the intersection of emotions and financial behavior",
+      allArticles: "All Articles",
+      readMore: "Read article",
+      minRead: "min read",
+      by: "By",
+      backToBlog: "Back to articles",
+      shareArticle: "Share this article",
+      relatedArticles: "Related Articles",
+      noArticles: "No articles yet",
+      noArticlesDescription: "Check back soon for insights from our expert contributors.",
+      categories: {
+        emotions: "Emotions",
+        behavioral_finance: "Behavioral Finance",
+        wellbeing: "Well-being",
+        mindfulness: "Mindfulness",
+        psychology: "Psychology",
+      },
+    },
+  },
+  es: {
+    blog: {
+      title: "Perspectivas",
+      subtitle: "Opiniones expertas sobre la interseccion entre emociones y comportamiento financiero",
+      allArticles: "Todos los articulos",
+      readMore: "Leer articulo",
+      minRead: "min de lectura",
+      by: "Por",
+      backToBlog: "Volver a articulos",
+      shareArticle: "Compartir este articulo",
+      relatedArticles: "Articulos relacionados",
+      noArticles: "Sin articulos aun",
+      noArticlesDescription: "Vuelve pronto para ver las perspectivas de nuestros expertos.",
+      categories: {
+        emotions: "Emociones",
+        behavioral_finance: "Finanzas conductuales",
+        wellbeing: "Bienestar",
+        mindfulness: "Atencion plena",
+        psychology: "Psicologia",
+      },
+    },
+  },
+  fr: {
+    blog: {
+      title: "Perspectives",
+      subtitle: "Regards d'experts sur l'intersection entre emotions et comportement financier",
+      allArticles: "Tous les articles",
+      readMore: "Lire l'article",
+      minRead: "min de lecture",
+      by: "Par",
+      backToBlog: "Retour aux articles",
+      shareArticle: "Partager cet article",
+      relatedArticles: "Articles similaires",
+      noArticles: "Aucun article pour l'instant",
+      noArticlesDescription: "Revenez bientot pour decouvrir les perspectives de nos experts.",
+      categories: {
+        emotions: "Emotions",
+        behavioral_finance: "Finance comportementale",
+        wellbeing: "Bien-etre",
+        mindfulness: "Pleine conscience",
+        psychology: "Psychologie",
+      },
+    },
+  },
+} as const
+
+export type BlogLocale = keyof typeof blogTranslations

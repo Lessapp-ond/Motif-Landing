@@ -1,0 +1,5 @@
+<svg width="1024" height="1024" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="1024" fill="#F5F0EB"/>
+  <circle cx="512" cy="512" r="349.25" fill="none" stroke="#C4885B" stroke-width="1.5" opacity="0.15"/>
+  <text x="512" y="500" font-family="'Cormorant Garamond', serif" font-weight="300" font-size="750" fill="#C4885B" text-anchor="middle" dominant-baseline="middle">M</text>
+</svg>
