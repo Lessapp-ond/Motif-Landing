@@ -6,6 +6,7 @@ import { Hero } from "@/components/landing/hero"
 import { Features } from "@/components/landing/features"
 import { HowItWorks } from "@/components/landing/how-it-works"
 import { Philosophy } from "@/components/landing/philosophy"
+import { WhyBuiltThis } from "@/components/landing/why-built-this"
 import { Download } from "@/components/landing/download"
 import { Footer } from "@/components/landing/footer"
 import { translations, type Locale } from "@/lib/translations"
@@ -39,6 +40,7 @@ export default function LandingPage() {
       <Features locale={locale} />
       <HowItWorks locale={locale} />
       <Philosophy locale={locale} />
+      <WhyBuiltThis locale={locale} />
       <Download locale={locale} />
       <Footer locale={locale} t={t} />
     </main>
